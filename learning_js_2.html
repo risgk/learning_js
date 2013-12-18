@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>learning_js_2</title>
+<style>
+h1 {
+    color: blue;
+};
+</style>
+<script>
+window.onload = function() {
+    window.alert("Hello world!");
+    var ok = window.confirm("Are you OK?");
+    console.log(ok);
+    var from = window.prompt("Who are you from?","Tokyo");
+    console.log(from);
+    
+    var btnA = document.getElementById("btnA");
+    btnA.onclick = function() {
+        window.alert("Hello another world!");
+        btnA.style.width = "50%";
+    }
+};
+</script>
+</head>
+<body>
+<h1>learning_js_2</h1>
+<button id="btnA">Button A</button>
+<br>
+<button id="btnB">Button B</button>
+</body>
+</html>
