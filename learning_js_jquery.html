@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>learning_js_jquery</title>
+<style>
+h1 {
+    color: blue;
+};
+</style>
+<script src="jquery-2.0.3.js"></script>
+<script>
+$(function() {
+    alert("Hello world!");
+    var ok = confirm("Are you OK?");
+    console.log(ok);
+    var from = prompt("Who are you from?","Tokyo");
+    console.log(from);
+    
+    var $btnA = $("#btnA");
+    $btnA.click(function() {
+        window.alert("Hello another world!");
+        $btnA.css("width", "50%");
+    })
+});
+</script>
+</head>
+<body>
+<h1>learning_js_jquery</h1>
+<button id="btnA">Button A</button>
+<br>
+<button id="btnB">Button B</button>
+</body>
+</html>
